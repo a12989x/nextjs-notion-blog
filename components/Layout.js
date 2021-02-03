@@ -1,10 +1,12 @@
 import Head from './Head';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
     return (
         <>
             <Head />
             {children}
+            <Footer />
         </>
     );
 };
