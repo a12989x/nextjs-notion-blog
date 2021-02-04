@@ -1,6 +1,7 @@
 /* abstracts */
 @import './abstracts/variables';
 @import './abstracts/breakpoints';
+@import './abstracts/mixins';
 
 /* vendors */
 @import './vendors/normalize';
@@ -10,7 +11,9 @@
 @import './base/typography';
 
 /* layout */
+@import './layout/header';
 @import './layout/footer';
 
 /* components */
 /* pages */
+@import './pages/home';
