@@ -1,0 +1,17 @@
+:root {
+    --text-color: #161616;
+    --gray-color: #777c90;
+    --background-color: #ffffff;
+}
+
+.dark-mode {
+    --text-color: #ffffff;
+    --gray-color: #959595;
+    --background-color: #161616;
+}
+
+$text-color: var(--text-color);
+$gray-color: var(--gray-color);
+$background-color: var(--background-color);
+
+$accent-color: #8d1ffc;
