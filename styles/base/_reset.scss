@@ -3,9 +3,19 @@
 }
 
 body {
-    font-weight: 500;
-    color: #000000;
-    background-color: #fff;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+#__next {
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 1000px;
+
+    & > section {
+        min-height: calc(100vh - 6rem);
+    }
 }
 
 a {
