@@ -1,0 +1,22 @@
+@mixin link($color: $accent-color) {
+    position: relative;
+
+    &::after {
+        content: '';
+        height: 1px;
+        width: 0;
+        margin: 0;
+        background-color: $color;
+        display: block;
+        position: absolute;
+        right: 0;
+        transition: 0.4s ease;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
