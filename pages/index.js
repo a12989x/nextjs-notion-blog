@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Posts from '../components/Posts';
 
 const Home = () => {
     return (
@@ -55,6 +56,8 @@ const Home = () => {
             </Link>
 
             <hr className='home__hr' />
+
+            <Posts />
         </section>
     );
 };
