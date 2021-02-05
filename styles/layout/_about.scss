@@ -1,0 +1,66 @@
+.about {
+    text-align: center;
+
+    &__images {
+        position: relative;
+    }
+
+    div:nth-child(2) {
+        position: absolute !important;
+        top: calc(100% - 60px);
+        left: calc(50% - 60px);
+    }
+
+    &__cover {
+        border-radius: 0.3125rem;
+        border-bottom: 2px solid $accent-color !important;
+    }
+
+    &__avatar {
+        border-radius: 100%;
+        border: 2px solid $accent-color !important;
+    }
+
+    &__title {
+        margin: 4.375rem 0 0.5rem;
+        font-weight: 500;
+    }
+
+    &__description {
+        margin: 0 auto;
+        max-width: 750px;
+        line-height: 1.3;
+        font-style: 1rem;
+    }
+
+    &__name {
+        font-weight: 500;
+    }
+
+    &__link {
+        font-weight: 400;
+        color: $accent-color;
+        @include link;
+    }
+
+    &__seeMyWork {
+    }
+
+    &__btn {
+        padding: 0.7rem 1rem;
+        margin: 1rem 0 0;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $accent-color;
+        background-color: transparent;
+        border: 2px solid $accent-color;
+        border-radius: 0.3125rem;
+        transition: 0.3s;
+
+        &:hover {
+            color: $background-color;
+            background-color: $accent-color;
+            cursor: pointer;
+        }
+    }
+}
