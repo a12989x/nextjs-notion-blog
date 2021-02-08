@@ -6,9 +6,7 @@ import { getPosts } from '../lib/strapi';
 export const getStaticProps = async () => {
     const posts = await getPosts();
 
-    console.log(posts);
-
-    return { props: { posts: 'p' } };
+    return { props: { posts } };
 };
 
 const Home = ({ posts }) => {
